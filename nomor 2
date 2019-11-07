@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char nama [25] ;
+    int N_Akhir,N_Uts,N_Uas,N_Tugas,indeks;
+    
+    cout << "Masukkan nama anda : " ;
+    cin >> nama;
+    cout << "Masukkan nilai UTS anda : " ;
+    cin >> N_Uts;
+    cout << "Masukkan nilai UAS anda : " ;
+    cin >> N_Uas ;
+    cout << "Masukkan nilai Tugas anda : " ;
+    cin >> N_Tugas;
+   
+    N_Uts= N_Uts*40/100;
+    N_Tugas = N_Tugas*30/100;
+    N_Uas = N_Uas*30/100;
+    N_Akhir = N_Uts+N_Uas+N_Tugas;
+    
+    cout << "Nama : " << nama << endl;
+    cout << "Nilai akhir : " << N_Akhir << endl;
+    
+ if(N_Akhir <70){
+        cout << "Indeks Nilai D";
+        } else if(N_Akhir >=70 and N_Akhir < 80){
+            cout << "Indeks Nilai C";
+        } else if(N_Akhir >=80 and N_Akhir < 90){
+            cout << "Indeks Nilai B";
+        } else if(N_Akhir >=90){
+            cout << "Indeks Nilai A";
+        }
+
+ return 0;
+}
