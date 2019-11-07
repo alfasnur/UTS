@@ -4,15 +4,18 @@ using namespace std;
 
 int main() {
     char nama [25] ;
-    int N_Akhir,N_Uts,N_Uas,N_Tugas,indeks;
-    
-    cout << "Masukkan nama anda : " ;
+    int N_Akhir,N_Uts,N_Uas,N_Tugas,i;
+    for (i=1; i<=20; i++){
+        cout << endl;
+        cout << endl;
+        cout << "Mahasiswa ke " << i <<endl;
+    cout << "Masukkan nama : " ;
     cin >> nama;
-    cout << "Masukkan nilai UTS anda : " ;
+    cout << "Masukkan nilai UTS  : " ;
     cin >> N_Uts;
-    cout << "Masukkan nilai UAS anda : " ;
+    cout << "Masukkan nilai UAS  : " ;
     cin >> N_Uas ;
-    cout << "Masukkan nilai Tugas anda : " ;
+    cout << "Masukkan nilai Tugas  : " ;
     cin >> N_Tugas;
    
     N_Uts= N_Uts*40/100;
@@ -32,6 +35,6 @@ int main() {
         } else if(N_Akhir >=90){
             cout << "Indeks Nilai A";
         }
-
+    }
  return 0;
 }
